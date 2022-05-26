@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:Calibri;
+}
+
+/* ------------------News : Fashion ---------------------- */
+ /* -------------------Slider --------------------------------- */
+ 
+/* -----------------Begin : Slider----------------- */
+#slider {
+    position: relative;
+    padding-top: 50%;
+    background: url('/owen_DCRC_VN/assets/slider/Slider1.jpg') top center / cover no-repeat ;
+}
+
+#slider .text-content{
+    position:absolute;
+    bottom: 48px;
+    color: #fff; 
+    /* left: 50%;
+    transform: translateX(-50%);  */
+    text-align: center; 
+    width: 100%; 
+    /* left: 0;
+    right: 0;  */
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 30px;
+}
+#slider .text-description{
+     font-size: 20px;
+    margin-top: 15px; 
+}
+
+/*----------------End :Slider---------------- */
+
+/* -------------Begin : Content------------- */
+#content {
+    height: 2000px;
+    background-color: #fff;
+}
+
+
+
+#content .content-section{
+    width: 800px ;
+    margin-left:auto ;
+    margin-right: auto;
+    padding: 64px 64px 0;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 8px;
+
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify ;
+    line-height: 1.6;
+}
+
+/* ---------------------------------------- */
+
+#content .member-list{
+    margin-top: 48px;
+    /* Khắc phục khi các div dính nhau */
+    overflow: hidden;
+}
+
+/* ------------------------------------ */
+#content .member-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#content .member-item2{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#content .member-item3{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+
+
+/* --------------------------------------- */
+#content .member-name{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#content .member-name2{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* -------------------------------------------- */
+#content .member-img{
+    margin-top: 15px;
+    width: 325px;
+    border-radius: 4px;
+}
+
+#content .member-img2{
+    margin-top: 15px;
+    width: 600px;
+    border-radius: 4px;
+}
+
+#content .member-img3{
+    margin-top: 15px;
+    width: 400px;
+    border-radius: 4px;
+}
+
+/* --------------------------------------- */
+#footer .socials-list{
+    font-size: 24px;
+}
+
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer {
+    padding: 84px 0px 16px;
+    text-align: center;
+}
+/* ------------------------------------------- */

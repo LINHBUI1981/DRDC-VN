@@ -1,0 +1,406 @@
+/*Reset CSS Làm Móng*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:Calibri;
+}
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới 
+3. Tổng quan đến chi tiết
+*/
+/* 
+1.Vị Trí 
+2.Kích Thước ( width , height )
+3.Màu Sắc 
+4. Kiểu dáng( kiểu chữ , hình tròn , vuông ,....)
+
+*/
+
+
+#header {
+    height: 46px;
+    background-color:#fff;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav , .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav >li> a{
+    color: #000;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #CCC;  
+}
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position:absolute;
+    top : 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding:0 16px; 
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+/* -------------Search------------- */
+#header .search-btn{
+    float: right;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover{
+    background-color: #CCC;
+}
+
+#header .search-icon{
+    color: #111;
+    font-size: 20px;
+    line-height: 46px;
+}
+/* ---------------------------------------- */
+
+/* ---------------User------------------ */
+#header .user-btn{
+    float: right;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+#header .user-btn:hover{
+    background-color: #CCC;
+}
+
+#header .user-icon{
+    color: #111;
+    font-size: 20px;
+    line-height: 46px;
+}
+/* ---------------------------------------- */
+
+/* -----------------Menu---------------- */
+#header .menu-btn{
+    float: right;
+    padding: 0 24px;
+    cursor: pointer;
+    
+}
+
+#header .menu-btn:hover{
+    background-color: #CCC;
+}
+
+#header .menu-icon {
+    color: #111;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .menu-btn a{
+    text-decoration: none;
+}
+/* -------------------------------------- */
+
+/* --------------Logo--------------- */
+
+#header .logo-btn{
+    float: left;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+/* -------------------------------------- */
+
+/* -----------------Begin : Slider----------------- */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../slider/fashion.png') top center / cover no-repeat ;
+}
+
+#slider .text-content{
+    position:absolute;
+    bottom: 48px;
+    color: #fff;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+    width: 100%;
+    /* left: 0;
+    right: 0; */
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 30px;
+}
+#slider .text-description{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/*----------------End :Slider---------------- */
+
+/*---------------Begin : Content-------------- */
+#content {
+    height: 3000px;
+    background-color: #fff;
+}
+
+#content .content-section{
+    width: 800px ;
+    margin-left:auto ;
+    margin-right: auto;
+    padding: 64px 64px 0;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 8px;
+
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify ;
+    line-height: 1.6;
+}
+
+
+
+#content .member-list{
+    margin-top: 48px;
+    /* Khắc phục khi các div dính nhau */
+    overflow: hidden;
+}
+
+/* ------------------------------------ */
+#content .member-item{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+/* #content .member-item2 a {
+    float: left;
+    width: 50%;
+    text-align: center;
+} */
+
+/* #content .member-item3{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+} */
+
+
+/* --------------------------------------- */
+#content .member-gender{
+    font-size: 46px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-decoration: none;
+    color: #000;
+}
+
+/* #content .member-name2{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+
+/* -------------------------------------------- */
+#content .member-img{
+    margin-top: 15px;
+    width: 600px;
+    border-radius: 4px;
+}
+
+/* #content .member-img2{
+    margin-top: 15px;
+    width: 600px;
+    border-radius: 4px;
+} */
+
+/* #content .member-img3{
+    margin-top: 15px;
+    width: 400px;
+    border-radius: 4px;
+} */
+#content .contact-section{
+    width: 800px ;
+    margin-left:auto ;
+    margin-right: auto;
+    padding: 64px 64px 0;
+}
+
+/* -----------------Contact---------------- */
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+
+
+/* ----Contect form----- */
+.contact-content{
+    margin-top: 48px ;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti*-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #CCC;
+    width: 100%;
+
+}
+
+.contact-form .form-submit-btn{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+    outline: none;
+}
+
+/* ---------------End : Contact------------------- */
+/* ---------------------Begin : Map -------------------*/
+.map-section img{
+    width: 100%;
+    padding-top: 64px;
+}
+
+/* ----------------End : Content------------------ */
+
+/* ----------------Begin : Footer-------------------- */
+#footer .socials-list{
+    font-size: 24px;
+}
+
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer {
+    padding: 84px 0px 16px;
+    text-align: center;
+}
+
+ /* --------------End : Footer------------------------- */
+
+
+
+ 
