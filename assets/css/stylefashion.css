@@ -15,7 +15,7 @@ html{
 #slider {
     position: relative;
     padding-top: 50%;
-    background: url('/owen_DCRC_VN/assets/slider/Slider1.jpg') top center / cover no-repeat ;
+    background: url('../slider/Slider1.jpg') top center / cover no-repeat ;
 }
 
 #slider .text-content{
