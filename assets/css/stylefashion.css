@@ -15,7 +15,7 @@ html{
 #slider {
     position: relative;
     padding-top: 50%;
-    background: url('../slider/Slider1.jpg') top center / cover no-repeat ;
+    background: url('../slider/worldfashion.png') top center / cover no-repeat ;
 }
 
 #slider .text-content{
