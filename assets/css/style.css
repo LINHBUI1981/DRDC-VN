@@ -31,6 +31,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav{
@@ -94,10 +95,11 @@ html{
 #header .search-btn{
     float: right;
     padding: 0 24px;
-    cursor: pointer;
+    
 }
 
 #header .search-btn:hover{
+    cursor: pointer;
     background-color: #CCC;
 }
 
@@ -112,10 +114,11 @@ html{
 #header .user-btn{
     float: right;
     padding: 0 24px;
-    cursor: pointer;
+    
 }
 
 #header .user-btn:hover{
+    cursor: pointer;
     background-color: #CCC;
 }
 
@@ -127,17 +130,23 @@ html{
 /* ---------------------------------------- */
 
 /* -----------------Menu---------------- */
+#header .mobile-menu-btn,
 #header .menu-btn{
     float: right;
     padding: 0 24px;
-    cursor: pointer;
-    
 }
 
 #header .menu-btn:hover{
+    cursor: pointer;
     background-color: #CCC;
 }
 
+#header .mobile-menu-btn:hover .menu-iconn-mobile{
+    color: #000;
+    
+}
+
+#header .menu-iconn-mobile,
 #header .menu-icon {
     color: #111;
     font-size: 20px;
@@ -165,7 +174,6 @@ html{
     margin-top: 46px;
     padding-top: 50%;
     background: url('../slider/fashion.png') top center / cover no-repeat ;
-    
 }
 
 #slider .text-content{
@@ -198,6 +206,7 @@ html{
 
 #content .content-section{
     width: 800px ;
+    max-width: 100%;
     margin-left:auto ;
     margin-right: auto;
     padding: 64px 64px 0;
@@ -402,6 +411,7 @@ html{
 }
 
  /* --------------End : Footer------------------------- */
+
 
 
 

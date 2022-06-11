@@ -1,0 +1,54 @@
+@media(min-width: 1024px) {
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* -------------Tablet----------------- */
+@media(min-width:740px) and (max-width:1023px) {
+   
+}
+ /* ------------Mobile------------------- */
+ @media(max-width:740px) {
+    #nav > li {
+        display: block;
+    }
+
+    #header .menu-btn{
+        display: none;
+    }
+
+    #header .user-btn{
+        display: none;
+    }
+
+    #header .logo-btn{
+        display: none;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    #content .content-video{
+        width: 300px;
+        height: auto;
+    }
+
+    #content .member-gender{
+        width: 100%;
+    }
+
+    #content .member-img{
+        width: 160px;
+    }
+    #content .contact-section {
+        width: 425px;
+    }
+
+    #content{
+        height: 1900px;
+    }
+
+    
+ }

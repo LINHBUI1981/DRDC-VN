@@ -7,13 +7,41 @@
     <title>DRDC VIETNAM</title>
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/logo-logo/DR.png" type="image/x-icon" />
+    <Style>
+    /* --------------PC----------------- */
+    @media(min-width: 1024px) {
+        .pc {
+            display: block;
+            }
+    }
+
+    /* -------------Tablet----------------- */
+    @media(min-width:740px) and (max-width:1023px) {
+        .tablet {
+                display: block;
+            }
+    }
+
+    /* ------------Mobile------------------- */
+    @media(max-width:740px) {
+        .mobile {
+                display: block;
+            }
+    }
+    </Style>
 </head>
 <body>
     <div id="main">
         <!-- ---------------------Hear---------------- -->
         <div id="header">
+            <!-- ------------logo------------- -->
+            <div class="logo-btn">
+                <img src="assets/logo/Logo2.png" width="150" height="30">
+               </div>
+            <!-- ------------logo------------- -->
             <ul id="nav">
                 <!-- Bein : nav -->
                 <!-- -------------Fashion style------------- -->
@@ -56,8 +84,7 @@
 
             <!-- Begin : Menu Button -->
             <div class="menu-btn"> 
-                <a href=""><i class="menu-icon ti-menu"></i></a>
-                
+                <a href=""><i class="menu-icon ti-menu"></i></a> 
             </div> 
             <!-- End : Menu Button -->
 
@@ -65,7 +92,6 @@
 
             <!-- Begin : User Button -->
             <div class="user-btn">
-
             <i class="user-icon ti-user"></i>
             </div>
             <!-- End : User Button -->
@@ -77,15 +103,11 @@
                 <i class="search-icon ti-search"></i>
             </div> 
             <!-- End : Search Button -->
-
-            <!-- --------Begin:Logo------------------ -->
-
-           <div class="logo-btn">
-            <img src="assets/logo/Logo2.png" width="150" height="30">
-           </div>
-
-           <!-- ----------End: Logo--------------------- -->
-
+            
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-iconn-mobile ti-menu"></i>
+            </div>
+          
         </div>
         <!-- ---------------Header:End---------------- -->
 
@@ -135,7 +157,7 @@
         </div>
         <div class="member-item">
             <div>
-                <a href="" class="member-gender"><img src="assets/gender/trangsucnamnu.png" alt="" class="member-img"></a>
+                <a href="assets/shop/buy2.html" class="member-gender"><img src="assets/gender/trangsucnamnu.png" alt="" class="member-img"></a>
             </div>
         </div>
 </div>
@@ -200,5 +222,21 @@
         <!-- ------------------End : Footer -->
         <!-- ----------------------------------------- -->
     </div>
+    <script>
+        var header = document.getElementById('header');    
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        // Đóng mở mobile menu
+        mobileMenu.onclick = function(){
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = null;
+            }
+        }
+
+    </script>
 </body>
 </html>
