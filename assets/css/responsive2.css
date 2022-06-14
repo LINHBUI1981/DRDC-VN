@@ -1,0 +1,29 @@
+@media(min-width: 1024px) {
+    
+}
+
+@media(min-width:740px) and (max-width:1023px) {
+   
+}
+
+@media(max-width:740px) {
+    #content .content-section{
+        width: 100%;
+    }
+ 
+    #content .member-item{
+        width: 100%;
+    }
+
+    #content .member-item2{
+        width: 100%;
+    }
+
+    #content .member-img2{
+        width: 300px;
+    }
+
+    #content .member-item3{
+        width: 100%;
+    }
+ }
