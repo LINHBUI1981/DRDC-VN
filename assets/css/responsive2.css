@@ -3,7 +3,21 @@
 }
 
 @media(min-width:740px) and (max-width:1023px) {
-   
+    #content .member-item{
+        width: 100%;
+    }
+
+    #content .member-img{
+        width: 600px;
+    }
+
+    #content .member-item2{
+        width: 100%;
+    }
+
+    #content .member-item3{
+        width: 100%;
+    }
 }
 
 @media(max-width:740px) {
